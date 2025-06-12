@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.instagram-font {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.instagram-font-home {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: white;
+}
+
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* gray-700 */
+  border-radius: 10px;
+}
+
+/* Scrollbar track background */
+::-webkit-scrollbar-track {
+  background-color: #1f2937; /* gray-800 */
+}
+
+/* In your global CSS */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
