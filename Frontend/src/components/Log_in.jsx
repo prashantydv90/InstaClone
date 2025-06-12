@@ -24,7 +24,7 @@ export const Log_in = () => {
   let login=(e)=>{
     e.preventDefault();
     setIsLoading(true);
-    axios.post("http://localhost:1111/api/login",logInData,{
+    axios.post("https://instaclone-mmf6.onrender.com/api/login",logInData,{
       headers: {
         'Content-Type': 'application/json'
       },

@@ -13,7 +13,7 @@ export const Home = ({setLogedUser,logedUser}) => {
   let [isSU,setisSU]=useState(false)
   
   useEffect(()=>{
-    axios.get("http://localhost:1111/api/suggested",{
+    axios.get("https://instaclone-mmf6.onrender.com/api/suggested",{
       withCredentials:true
     }).then((res)=>{
       console.log(res);

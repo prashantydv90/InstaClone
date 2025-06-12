@@ -19,7 +19,7 @@ export const Search = ({ logedUser, showSearch, setSearchShow ,setLogedUser}) =>
   };
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/suggested", {
+      .get("https://instaclone-mmf6.onrender.com/api/suggested", {
         withCredentials: true,
       })
       .then((res) => {

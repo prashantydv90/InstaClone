@@ -150,7 +150,7 @@ const PostSaved = () => {
 const Posts = ({ logedUser, setShowPost, setpostdta }) => {
   let [postData, setPostData] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:1111/api/userpost/all", {
+    axios.get("https://instaclone-mmf6.onrender.com/api/userpost/all", {
       withCredentials: true
     }).then((res) => {
       // console.log(res);
@@ -215,7 +215,7 @@ const Posts = ({ logedUser, setShowPost, setpostdta }) => {
 //     const formData = new FormData();
 //     formData.append("profilePicture",form);
 //     formData.append("bio", editedData.bio);
-//     axios.post("http://localhost:1111/api/profile/edit",formData,{
+//     axios.post("https://instaclone-mmf6.onrender.com/api/profile/edit",formData,{
 //       headers:{
 //         'Content-Type':'multipart/form-data'
 //       },
@@ -291,7 +291,7 @@ const Posts = ({ logedUser, setShowPost, setpostdta }) => {
 //     formData.append("profilePicture", file);
 //     formData.append("bio", editedData.bio);
 
-//     axios.post("http://localhost:1111/api/profile/edit", formData, {
+//     axios.post("https://instaclone-mmf6.onrender.com/api/profile/edit", formData, {
 //       headers: {
 //         'Content-Type': 'multipart/form-data'
 //       },
@@ -361,7 +361,7 @@ const Editphoto = ({ imgEdit, setImgEdit, logedUser, setLogedUser, setIsLoading 
     formData.append("bio", editedData.bio);
     setImgEdit(false)
     setIsLoading(true);
-    axios.post("http://localhost:1111/api/profile/edit", formData, {
+    axios.post("https://instaclone-mmf6.onrender.com/api/profile/edit", formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       },
@@ -381,7 +381,7 @@ const Editphoto = ({ imgEdit, setImgEdit, logedUser, setLogedUser, setIsLoading 
   const removePhoto = () => {
     setIsLoading(true);
     setImgEdit(false)
-    axios.post('http://localhost:1111/api/profile/delPhoto', null, { withCredentials: true }).then((res) => {
+    axios.post('https://instaclone-mmf6.onrender.com/api/profile/delPhoto', null, { withCredentials: true }).then((res) => {
       setIsLoading(false)
       setLogedUser(res.data.user)
       alert('Photo removed')
@@ -440,7 +440,7 @@ const Editprofile = ({ setProfileEdit, setLogedUser }) => {
   const updateData = (e) => {
     e.preventDefault()
     setIsLoading(true);
-    axios.post("http://localhost:1111/api/profile/edit", profileData, {
+    axios.post("https://instaclone-mmf6.onrender.com/api/profile/edit", profileData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       },

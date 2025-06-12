@@ -22,7 +22,7 @@ export const UserList = ({showList,user,setShowList,logedUser,setLogedUser,}) =>
   console.log("logedUser:", logedUser);
   useEffect(() => {
     axios
-      .get(`http://localhost:1111/api/${user?._id}/profile`, {
+      .get(`https://instaclone-mmf6.onrender.com/api/${user?._id}/profile`, {
         withCredentials: true,
       })
       .then((res) => {

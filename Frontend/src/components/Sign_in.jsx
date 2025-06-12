@@ -26,7 +26,7 @@ export const Sign_in = () => {
   const saveData=(e)=>{
     e.preventDefault();
     setIsLoading(true);
-    axios.post("http://localhost:1111/api/register",signInData).then((res)=>{
+    axios.post("https://instaclone-mmf6.onrender.com/api/register",signInData).then((res)=>{
       console.log(res.data);
       setIsLoading(false);
       setSignInData(

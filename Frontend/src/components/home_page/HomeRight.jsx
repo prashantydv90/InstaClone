@@ -7,7 +7,7 @@ import { MdLogout } from "react-icons/md";
 export const HomeRight = ({ suggUser, logedUser, setLogedUser }) => {
   // let [suggUser,setSuggUser]=useState([])
   // useEffect(()=>{
-  //   axios.get("http://localhost:1111/api/suggested").then((res)=>{
+  //   axios.get("https://instaclone-mmf6.onrender.com/api/suggested").then((res)=>{
   //     console.log(res.data.users);
   //     setSuggUser(res.data.users);
   //   }).catch((err)=>{

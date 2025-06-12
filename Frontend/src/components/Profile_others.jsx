@@ -64,7 +64,7 @@ export const ProfileOthers = ({ logedUser ,setLogedUser}) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:1111/api/${user?._id}/profile`, {
+      .get(`https://instaclone-mmf6.onrender.com/api/${user?._id}/profile`, {
         withCredentials: true,
       })
       .then((res) => {

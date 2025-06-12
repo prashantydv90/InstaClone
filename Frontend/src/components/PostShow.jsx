@@ -30,7 +30,7 @@ export const PostShow = ({ setViewComment, postdta, logedUser,setpostdta ,setLog
   const fetchcomments = () => {
     axios
       .post(
-        `http://localhost:1111/api/${postdta._id}/comment/all`,
+        `https://instaclone-mmf6.onrender.com/api/${postdta._id}/comment/all`,
         {},
         { withCredentials: true }
       )

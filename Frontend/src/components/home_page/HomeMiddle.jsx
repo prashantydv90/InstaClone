@@ -110,7 +110,7 @@ const HomePost = ({ setViewComment, setpostdta, logedUser,setpostdet ,setShowLis
 
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/all", {
+      .get("https://instaclone-mmf6.onrender.com/api/all", {
         withCredentials: true,
       })
       .then(async (res) => {

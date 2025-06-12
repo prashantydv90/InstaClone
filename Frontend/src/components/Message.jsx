@@ -44,7 +44,7 @@ export const Message = () => {
   let [suggUser, setSuggUser] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:1111/api/suggested", {
+      .get("https://instaclone-mmf6.onrender.com/api/suggested", {
         withCredentials: true,
       })
       .then((res) => {
@@ -273,7 +273,7 @@ const MsgBox = ({ logedUser, recUser }) => {
   const sendMsg = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:1111/api/send/${recUser?._id}`, msg, {
+      .post(`https://instaclone-mmf6.onrender.com/api/send/${recUser?._id}`, msg, {
         withCredentials: true,
       })
       .then((res) => {
@@ -290,7 +290,7 @@ const MsgBox = ({ logedUser, recUser }) => {
   useEffect(() => {
     if (recUser?._id) {
       axios
-        .get(`http://localhost:1111/api/all/${recUser?._id}`, {
+        .get(`https://instaclone-mmf6.onrender.com/api/all/${recUser?._id}`, {
           withCredentials: true,
         })
         .then((res) => {

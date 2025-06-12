@@ -47,7 +47,7 @@ export const Create = ({toShow,setToShow,logedUser}) => {
   let [isLoading,setIsLoading]=useState(false)
   const uploadingPost=()=>{
     setIsLoading(true);
-    axios.post("http://localhost:1111/api/addpost",postData,{
+    axios.post("https://instaclone-mmf6.onrender.com/api/addpost",postData,{
       headers:{
         'Content-Type':'multipart/form-data'
       },
